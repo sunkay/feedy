@@ -1,0 +1,14 @@
+Elastic Beanstalk (eb) deployment
+
+#install pip
+
+To install pip, securely download get-pip.py
+$ python get-pip.py
+
+Install eb cli
+
+eb init
+
+eb create
+
+eb deploy
