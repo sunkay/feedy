@@ -7,8 +7,10 @@ $ python get-pip.py
 
 Install eb cli
 
+# elastic beanstalk useful commands
 eb init
-
 eb create
-
 eb deploy
+eb open
+eb logs
+eb platform show
