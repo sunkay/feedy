@@ -1,1 +1,11 @@
-keys.js
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules/
