@@ -23,6 +23,8 @@ app.use(passport.session());
 // authRoutes exports a function
 require("./routes/authRoutes")(app);
 
+console.log("NODE_ENV: " + process.env.NODE_ENV);
+
 const PORT = process.env.PORT || 5000;
 
 var server = app.listen(PORT, function() {
