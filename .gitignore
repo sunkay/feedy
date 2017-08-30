@@ -65,4 +65,4 @@ typings/
 !.elasticbeanstalk/*.global.yml
 
 # this project stuff
-keys.js
+dev.js
