@@ -14,3 +14,4 @@ eb deploy
 eb open
 eb logs
 eb platform show
+eb terminate
