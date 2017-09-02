@@ -26,12 +26,12 @@ passport.use(
       const existingUser = await User.findOne({ profileId: profile.id });
       if (existingUser) {
         console.log("user already exists");
-        done(null, existingUser);
-      } else {
-        console.log("saving new user with profileId: ", profile.id);
-        const user = await new User({ profileId: profile.id }).save();
-        done(null, user);
+        return done(null, existingUser);
       }
+
+      console.log("saving new user with profileId: ", profile.id);
+      const user = await new User({ profileId: profile.id }).save();
+      done(null, user);
     }
   )
 );
