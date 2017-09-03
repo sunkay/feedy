@@ -1,11 +1,20 @@
-import React, { PropTypes } from "react";
+import React from "react";
 
 class Header extends React.Component {
   render() {
     return (
-      <div>
-        <h2>Header</h2>
-      </div>
+      <nav>
+        <div className="nav-wrapper">
+          <a href="#" className="left brand-logo">
+            Feedy
+          </a>
+          <ul className="right">
+            <li>
+              <a href="/auth/google">Login with Google</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     );
   }
 }
